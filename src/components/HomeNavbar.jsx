@@ -18,7 +18,7 @@ function HomeNavbar() {
       </div>
       <div className="flex items-center relative">
         <input
-          className="border border-gray-500 rounded-3xl py-1 px-3 w-96 pr-10"
+          className="rounded-3xl py-1 px-3 w-96 pr-10"
           type="text"
           placeholder="Ürün ara"
         />
