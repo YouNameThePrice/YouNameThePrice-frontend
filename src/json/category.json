@@ -1,0 +1,81 @@
+[
+    {
+        "name": "Teknoloji",
+        "subCategory": [
+            {
+                "name": "Bilgisayar"
+            },
+            {
+                "name": "Telefon"
+            },
+            {
+                "name": "Kulaklık"
+            },
+            {
+                "name": "Televizyon"
+            },
+            {
+                "name": "Kamera"
+            },
+            {
+                "name": "Ev Aletleri"
+            }
+        ]
+    },
+    {
+        "name": "Moda",
+        "subCategory": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    {
+        "name": "Kozmetik",
+        "subCategory": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    {
+        "name": "Kırtasiye",
+        "subCategory": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    {
+        "name": "Spor",
+        "subCategory": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    {
+        "name": "Ev & Yaşam",
+        "subCategory": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    {
+        "name": "Müzik Aletleri",
+        "subCategory": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    {
+        "name": "Süpermarket",
+        "subCategory": [
+            {
+                "name": ""
+            }
+        ]
+    }
+]

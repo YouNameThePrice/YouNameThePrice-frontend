@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "title": "Sample1",
+        "detail": "Detail of Sample1",
+        "price": 40000,
+        "imageUrl": "",
+        "category": "Teknoloji",
+        "subCategory": "Bilgisayar"    
+    },
+    {
+        "id": 1,
+        "title": "Sample2",
+        "detail": "Detail of Sample2",
+        "price": 10000,
+        "imageUrl": "",
+        "category": "Teknoloji",
+        "subCategory": "Telefon"    
+    }
+]
