@@ -1,0 +1,19 @@
+import React from "react";
+import ProfileSidebar from "../components/ProfileSidebar";
+import ProfileInfo from "../components/ProfileInfo";
+// import { Link } from "react-router-dom";
+
+function ProfileDetail() {
+  return (
+    <div className="flex flex-row bg-light--gray h-[83.2vh] max-h-screen">
+      <ProfileSidebar />
+
+      {/* Üyelik Bilgilerim */}
+      <ProfileInfo />
+
+      {/* Favorilerim */}
+    </div>
+  );
+}
+
+export default ProfileDetail;
