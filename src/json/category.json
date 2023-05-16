@@ -26,7 +26,19 @@
         "name": "Moda",
         "subCategory": [
             {
-                "name": ""
+                "name": "Kadın Giyim"
+            },
+            {
+                "name": "Erkek Giyim"
+            },
+            {
+                "name": "Çocuk Giyim"
+            },
+            {
+                "name": "Ayakkabı"
+            },
+            {
+                "name": "Aksesuar"
             }
         ]
     },
@@ -34,7 +46,16 @@
         "name": "Kozmetik",
         "subCategory": [
             {
-                "name": ""
+                "name": "Makyaj Ürünleri"
+            },
+            {
+                "name": "Cilt Bakım"
+            },
+            {
+                "name": "Saç Bakım"
+            },
+            {
+                "name": "Parfüm & Deodorant"
             }
         ]
     },
@@ -42,7 +63,19 @@
         "name": "Kırtasiye",
         "subCategory": [
             {
-                "name": ""
+                "name": "Defter"
+            },
+            {
+                "name": "Kalem"
+            },
+            {
+                "name": "Kitap"
+            },
+            {
+                "name": "Okul Malzemeleri"
+            },
+            {
+                "name": "Ofis Malzemeleri"
             }
         ]
     },
@@ -50,7 +83,13 @@
         "name": "Spor",
         "subCategory": [
             {
-                "name": ""
+                "name": "Spor Aksesuarları"
+            },
+            {
+                "name": "Fitness Aletleri"
+            },
+            {
+                "name": "Besin Takviyeleri"
             }
         ]
     },
@@ -58,7 +97,16 @@
         "name": "Ev & Yaşam",
         "subCategory": [
             {
-                "name": ""
+                "name": "Mobilya"
+            },
+            {
+                "name": "Dekorasyon"
+            },
+            {
+                "name": "Aydınlatma"
+            },
+            {
+                "name": "Ev aletleri"
             }
         ]
     },
@@ -66,7 +114,16 @@
         "name": "Müzik Aletleri",
         "subCategory": [
             {
-                "name": ""
+                "name": "Gitar"
+            },
+            {
+                "name": "Keman"
+            },
+            {
+                "name": "Piyano"
+            },
+            {
+                "name": "Nefesli Çalgılar"
             }
         ]
     },
@@ -74,7 +131,19 @@
         "name": "Süpermarket",
         "subCategory": [
             {
-                "name": ""
+                "name": "Temel Gıdalar"
+            },
+            {
+                "name": "Evcil Hayvan Ürünleri"
+            },
+            {
+                "name": "Temizlik"
+            },
+            {
+                "name": "İçecekler"
+            },
+            {
+                "name": "Hazır Gıdalar"
             }
         ]
     }
