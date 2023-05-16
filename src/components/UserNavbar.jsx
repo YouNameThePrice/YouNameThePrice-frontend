@@ -18,7 +18,7 @@ function UserNavbar() {
         >
           Üye Ol
         </Link>
-        <Link to="/" className="border-2 border-black bg-light--gray p-2">
+        <Link to="/login" className="border-2 border-black bg-light--gray p-2">
           Giriş Yap
         </Link>
       </div>

@@ -7,6 +7,8 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
+import { Link } from "react-router-dom";
+
 function HomeNavbar() {
   return (
     <nav className="bg-orange flex justify-between items-center py-2 px-4">
@@ -29,13 +31,21 @@ function HomeNavbar() {
       <div className="mr-4">
         <ul className="flex">
           <li className="mr-2">
-            <AiOutlineHome size={35} />
+            <Link to="/">
+              <AiOutlineHome size={35} />
+            </Link>
+            
           </li>
           <li className="mr-2">
-            <AiOutlineShoppingCart size={35} />
+            <Link to="/cart">
+              <AiOutlineShoppingCart size={35} />
+            </Link>
+            
           </li>
           <li>
-            <AiOutlineUser size={35} />
+            <Link to="/profile">
+              <AiOutlineUser size={35} />
+            </Link>
           </li>
         </ul>
       </div>
