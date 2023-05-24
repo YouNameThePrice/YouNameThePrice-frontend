@@ -7,6 +7,7 @@ import HomeNavbar from "./components/HomeNavbar";
 import Home from "./pages/Home";
 import ProfileDetail from "./pages/ProfileDetail";
 import MainCategory from "./components/MainCategory";
+import Cart from "./pages/Cart";
 
 function App() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<ProfileDetail />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );
