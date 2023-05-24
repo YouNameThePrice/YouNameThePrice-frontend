@@ -9,6 +9,7 @@ module.exports = {
         "button--green": "#10F635",
         "button--red": "#E03B16",
         "button--orange": "#FFB967",
+        "--turquoise": "#16BABA",
       },
       fontFamily: {
         serif: ["Inter", "sans-serif"],
