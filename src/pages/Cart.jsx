@@ -22,11 +22,9 @@ function Cart() {
             </div>
             <div className='flex flex-col justify-end items-end ml-7 '>
                 <button><FaTrashAlt className='h-6 w-6 mb-10' /></button>
-                <h2>40000 TL</h2>
+                <h3 className='text-lg font-bold'>40000 TL</h3>
             </div>
           </div>
-          {/* Add more product cards here */}
-          
         </div>
       </div>
 
@@ -34,12 +32,13 @@ function Cart() {
       <div className="w-12" />
 
       {/* Order Detail Section */}
-      <div className="w-1/3 p-8 h-2/5 bg-light--gray border-black border-2">
-        <h2 className="text-2xl font-bold mb-4 text-center">Sipariş Detayı</h2>
-        <div className="border border-gray-300 p-4 mb-4">
-          <h3 className="text-lg font-bold">Toplam Tutar: <span>40000 TL</span></h3>
+      <div className="flex flex-col justify-center items-center w-1/3 h-2/5 bg-light--gray border border-black">
+        <h2 className="text-2xl font-bold mb-4">Sipariş Detayı</h2>
+        <hr className="border-black w-full mb-4" />
+        <div className="p-4 mb-4">
+          <h3 className="text-lg font-bold">Toplam Tutar : <span className='-text--turquoise'>40000 TL</span></h3>
         </div>
-        <button className="bg-black text-white py-2 px-4 rounded-xl">
+        <button className="bg-black text-white py-2 px-4 rounded-xl w-1/4">
           Satın Al
         </button>
       </div>
