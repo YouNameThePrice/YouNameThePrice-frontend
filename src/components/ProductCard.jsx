@@ -5,7 +5,7 @@ import AddFavoriteButton from "./AddFavoriteButton";
 
 function ProductCard() {
   return (
-    <div className="flex flex-wrap">
+    <div className="">
       <div className="w-64 max-w-xs rounded-lg border border-slate-900  mt-3 ml-8">
         <img className="w-full p-2" src={macbook} alt="product" />
         <div className="px-3 py-2 border-y border-y-slate-700 flex flex-col items-center">
