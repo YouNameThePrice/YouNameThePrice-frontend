@@ -18,7 +18,7 @@
                 "name": "Kamera"
             },
             {
-                "name": "Ev Aletleri"
+                "name": "EvAletleri"
             }
         ]
     },
@@ -26,13 +26,13 @@
         "name": "Moda",
         "subCategory": [
             {
-                "name": "Kadın Giyim"
+                "name": "KadınGiyim"
             },
             {
-                "name": "Erkek Giyim"
+                "name": "ErkekGiyim"
             },
             {
-                "name": "Çocuk Giyim"
+                "name": "ÇocukGiyim"
             },
             {
                 "name": "Ayakkabı"
@@ -46,16 +46,16 @@
         "name": "Kozmetik",
         "subCategory": [
             {
-                "name": "Makyaj Ürünleri"
+                "name": "MakyajÜrünleri"
             },
             {
-                "name": "Cilt Bakım"
+                "name": "CiltBakım"
             },
             {
-                "name": "Saç Bakım"
+                "name": "SaçBakım"
             },
             {
-                "name": "Parfüm & Deodorant"
+                "name": "Parfüm&Deodorant"
             }
         ]
     },
@@ -72,10 +72,10 @@
                 "name": "Kitap"
             },
             {
-                "name": "Okul Malzemeleri"
+                "name": "OkulMalzemeleri"
             },
             {
-                "name": "Ofis Malzemeleri"
+                "name": "OfisMalzemeleri"
             }
         ]
     },
@@ -83,18 +83,18 @@
         "name": "Spor",
         "subCategory": [
             {
-                "name": "Spor Aksesuarları"
+                "name": "SporAksesuarları"
             },
             {
-                "name": "Fitness Aletleri"
+                "name": "FitnessAletleri"
             },
             {
-                "name": "Besin Takviyeleri"
+                "name": "BesinTakviyeleri"
             }
         ]
     },
     {
-        "name": "Ev & Yaşam",
+        "name": "Ev&Yaşam",
         "subCategory": [
             {
                 "name": "Mobilya"
@@ -106,12 +106,12 @@
                 "name": "Aydınlatma"
             },
             {
-                "name": "Ev aletleri"
+                "name": "EvAletleri"
             }
         ]
     },
     {
-        "name": "Müzik Aletleri",
+        "name": "MüzikAletleri",
         "subCategory": [
             {
                 "name": "Gitar"
@@ -123,7 +123,7 @@
                 "name": "Piyano"
             },
             {
-                "name": "Nefesli Çalgılar"
+                "name": "NefesliÇalgılar"
             }
         ]
     },
@@ -131,10 +131,10 @@
         "name": "Süpermarket",
         "subCategory": [
             {
-                "name": "Temel Gıdalar"
+                "name": "TemelGıdalar"
             },
             {
-                "name": "Evcil Hayvan Ürünleri"
+                "name": "EvcilHayvanÜrünleri"
             },
             {
                 "name": "Temizlik"
@@ -143,7 +143,7 @@
                 "name": "İçecekler"
             },
             {
-                "name": "Hazır Gıdalar"
+                "name": "HazırGıdalar"
             }
         ]
     }
