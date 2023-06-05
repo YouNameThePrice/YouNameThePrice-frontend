@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import ProfileDetail from "./pages/ProfileDetail";
 import MainCategory from "./components/MainCategory";
 import Cart from "./pages/Cart";
+import Favorite from "./pages/Favorite";
 
 function App() {
   const location = useLocation();
@@ -31,6 +32,7 @@ function App() {
         <Route path="/:category/:subcategory" element={<Home />} />
 
         <Route path="/profile" element={<ProfileDetail />} />
+        <Route path="/favorite" element={<Favorite />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
