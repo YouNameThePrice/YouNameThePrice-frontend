@@ -1,6 +1,7 @@
 import React from "react";
 import ProfileSidebar from "../components/ProfileSidebar";
 import ProfileInfo from "../components/ProfileInfo";
+
 // import { Link } from "react-router-dom";
 
 function ProfileDetail() {
