@@ -34,13 +34,11 @@ function HomeNavbar() {
             <Link to="/">
               <AiOutlineHome size={35} />
             </Link>
-            
           </li>
           <li className="mr-2">
             <Link to="/cart">
               <AiOutlineShoppingCart size={35} />
             </Link>
-            
           </li>
           <li>
             <Link to="/profile">
