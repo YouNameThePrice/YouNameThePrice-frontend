@@ -23,7 +23,3 @@ function ProductCard({ product }) {
 }
 
 export default ProductCard;
-
-/*
-    mt-3 ve ml-8 stili daha sonra kaldırılacak
-*/

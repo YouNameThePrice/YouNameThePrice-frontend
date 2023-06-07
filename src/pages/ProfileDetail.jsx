@@ -11,8 +11,6 @@ function ProfileDetail() {
 
       {/* Üyelik Bilgilerim */}
       <ProfileInfo />
-
-      {/* Favorilerim */}
     </div>
   );
 }
