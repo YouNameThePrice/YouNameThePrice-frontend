@@ -1,20 +1,74 @@
 [
     {
         "id": 0,
-        "title": "Sample1",
-        "detail": "Detail of Sample1",
-        "price": 40000,
-        "imageUrl": "",
+        "title": "Macbook M2 Pro",
+        "detail": "512GB SSD,16GB RAM,14 inç Ekran Boyutu,18 saate kadar pil ömrü",
+        "price": 47000,
+        "imageUrl": "https://s12.gifyu.com/images/SuFXJ.png",
         "category": "Teknoloji",
         "subCategory": "Bilgisayar"    
     },
     {
         "id": 1,
-        "title": "Sample2",
-        "detail": "Detail of Sample2",
-        "price": 10000,
-        "imageUrl": "",
+        "title": "Apple İphone 13 Pro",
+        "detail": "512GB Dahili Hafıza,6GB RAM,12MP Kamera Çözünürlüğü,6.1 inç Ekran Boyutu",
+        "price": 27000,
+        "imageUrl": "https://s4.gifyu.com/images/Apple-iPhone-13-Pro.jpg",
         "category": "Teknoloji",
         "subCategory": "Telefon"    
+    },
+    {
+        "id": 2,
+        "title":"HP Victus Gaming Laptop",
+        "detail": "Intel Core i5 12500H işlemci,16GB RAM,1TB SSD,RTX3050 Ekran Kartı",
+        "price": 22000,
+        "imageUrl": "https://s12.gifyu.com/images/SuFem.webp",
+        "category": "Teknoloji",
+        "subCategory": "Bilgisayar"  
+    },
+    {
+        "id": 3,
+        "title": "MSI TITAN Gaming Laptop",
+        "detail": "Intel Core i9-13980HX işlemci, 128GB RAM, 4TB SSD, RTX4090 Ekran Kartı, 17.3inç ekran boyutu",
+        "price": 120000,
+        "imageUrl": "https://s12.gifyu.com/images/SuFeY.webp",
+        "category": "Teknoloji",
+        "subCategory": "Bilgisayar"  
+    },
+    {
+        "id": 4,
+        "title": "Lenovo Ideapad 3 Laptop",
+        "detail": "Amd Ryzen 5 5500U işlemci, 8GB RAM, 256GB SSD, 15inç ekran boyutu",
+        "price": 9000,
+        "imageUrl": "https://s11.gifyu.com/images/SuU2a.webp",
+        "category": "Teknoloji",
+        "subCategory": "Bilgisayar"  
+    },
+    {
+        "id": 5,
+        "title": "Casper Excalibur Gaming Laptop",
+        "detail": "Intel Core i5 12450H işlemci, 8GB RAM, 500GB SSD, 4 GB RTX 3050 Ti Ekran Kartı,15inç ekran boyutu",
+        "price": 22000,
+        "imageUrl": "https://s12.gifyu.com/images/SuUSL.webp",
+        "category": "Teknoloji",
+        "subCategory": "Bilgisayar"  
+    },
+    {
+        "id": 6,
+        "title": "Apple Macbook M1 Pro",
+        "detail": "1TB SSD,16GB RAM,16 inç Ekran Boyutu,18 saate kadar pil ömrü",
+        "price": 50000,
+        "imageUrl": "https://s12.gifyu.com/images/SuUSN.gif",
+        "category": "Teknoloji",
+        "subCategory": "Bilgisayar"  
+    },
+    {
+        "id": 7,
+        "title": "Gıpta Defter",
+        "detail": "Yaprak sayısı: 40, Ürün Tipi: Çizgisiz, Ebat: 17x24",
+        "price": 20,
+        "imageUrl": "https://s11.gifyu.com/images/SuUSu.gif",
+        "category": "Kırtasiye",
+        "subCategory": "Defter"  
     }
 ]
