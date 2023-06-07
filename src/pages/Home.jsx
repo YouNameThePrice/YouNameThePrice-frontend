@@ -2,6 +2,7 @@ import React from "react";
 import ProductCard from "../components/ProductCard";
 import Subcategory from "../components/Subcategory";
 import { useLocation } from "react-router-dom";
+import product from "../json/data.json";
 
 function Home() {
   const location = useLocation();
@@ -12,12 +13,9 @@ function Home() {
       {showSubcategory && <Subcategory />}
 
       <div className="flex flex-wrap overflow-y-scroll">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {product.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
       </div>
     </div>
   );
