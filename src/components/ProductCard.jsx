@@ -14,7 +14,7 @@ function ProductCard({ product }) {
           <p className="font-bold text-xl ">{product.price} TL</p>
         </div>
         <div className="px-4 py-2 flex justify-center">
-          <AddCartButton />
+          <AddCartButton product={product} />
           <AddFavoriteButton product={product} />
         </div>
       </div>

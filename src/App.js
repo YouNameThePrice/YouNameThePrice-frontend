@@ -18,10 +18,13 @@ function App() {
     location.pathname !== "/register" && location.pathname !== "/login";
 
   const [favoriteProducts, setFavoriteProducts] = useState([]);
+  const [cartProducts, setCartProducts] = useState([]);
 
   const data = {
     favoriteProducts,
     setFavoriteProducts,
+    cartProducts,
+    setCartProducts,
     product,
   };
 

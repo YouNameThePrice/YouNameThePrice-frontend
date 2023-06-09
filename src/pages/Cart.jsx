@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import CartProductCard from "../components/CartProductCard";
+import { MainContext } from "../context/context";
 
 function Cart() {
+  const { cartProducts } = useContext(MainContext);
+
   return (
     <div className="flex justify-center  h-[83.2vh] px-7 pt-10">
       {/* Product Section */}
       <div className="w-2/3 p-8 overflow-y-scroll">
         <div className="space-y-4 ">
           {/* Product Card */}
-          <CartProductCard />
+          {cartProducts.map((item, id) => (
+            <CartProductCard key={id} item={item} />
+          ))}
         </div>
       </div>
 

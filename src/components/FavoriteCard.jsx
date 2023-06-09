@@ -1,6 +1,5 @@
 import React from "react";
 import AddCartButton from "./AddCartButton";
-// import macbook from "../assets/macbook.png";
 import RemoveFavoriteButton from "./RemoveFavoriteButton";
 
 function FavoriteCard({ item }) {
@@ -16,7 +15,7 @@ function FavoriteCard({ item }) {
         <h3 className="text-lg font-bold">{item.price} TL</h3>
       </div>
       <div className="flex flex-row justify-end items-end ml-7 pt-14 ">
-        <AddCartButton />
+        <AddCartButton product={item} />
         <div className="mx-2"></div>
         <RemoveFavoriteButton item={item} />
       </div>

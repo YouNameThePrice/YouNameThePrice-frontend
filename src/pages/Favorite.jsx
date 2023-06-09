@@ -16,7 +16,6 @@ function Favorite() {
         {favoriteProducts.map((item, id) => (
           <FavoriteCard key={id} item={item} />
         ))}
-        {/* <FavoriteCard /> */}
       </div>
     </div>
   );
