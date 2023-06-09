@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
+import { MainContext } from "../context/context";
 
 function CartProductCard({ item }) {
+  const { cartProducts, setCartProducts } = useContext(MainContext);
+
+  const removeCartItem = () => {
+    const updatedCartItems = cartProducts.filter(
+      (cartItem) => cartItem.id !== item.id
+    );
+    setCartProducts(updatedCartItems);
+  };
+
   return (
     <div className="flex items-center py-4  bg-light--gray border-b-2 border-b-black">
       <img
@@ -23,7 +33,7 @@ function CartProductCard({ item }) {
         </div>
       </div>
       <div className="flex flex-col justify-end items-end ml-7 ">
-        <button>
+        <button onClick={removeCartItem}>
           <FaTrashAlt className="h-6 w-6 mb-10" />
         </button>
         <h3 className="text-lg font-bold">{item.price} TL</h3>
