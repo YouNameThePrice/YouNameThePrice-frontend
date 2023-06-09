@@ -3,20 +3,20 @@ import CartProductCard from "../components/CartProductCard";
 import { MainContext } from "../context/context";
 
 function Cart() {
-  const { cartProducts, quantity } = useContext(MainContext);
+  const { cartProducts } = useContext(MainContext);
   let [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     const calculateTotalPrice = () => {
       let totalPrice = 0;
       cartProducts.forEach((item) => {
-        totalPrice += item.price * quantity;
+        totalPrice += item.price * item.quantity;
       });
       setTotalPrice(totalPrice);
     };
 
     calculateTotalPrice();
-  }, [cartProducts, quantity]);
+  }, [cartProducts]);
 
   return (
     <div className="flex justify-center  h-[83.2vh] px-7 pt-10">
@@ -40,7 +40,7 @@ function Cart() {
         <div className="p-4 mb-4">
           <h3 className="text-lg font-bold">
             Toplam Tutar :
-            <span className="-text--turquoise">{totalPrice} TL</span>
+            <span className="-text--turquoise"> {totalPrice} TL</span>
           </h3>
         </div>
         <button className="bg-black text-white py-2 px-4 rounded-xl w-1/4">
