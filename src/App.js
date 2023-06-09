@@ -9,6 +9,7 @@ import ProfileDetail from "./pages/ProfileDetail";
 import MainCategory from "./components/MainCategory";
 import Cart from "./pages/Cart";
 import Favorite from "./pages/Favorite";
+import ProductDetail from "./pages/ProductDetail";
 import { MainContext } from "./context/context";
 import product from "./json/data.json";
 
@@ -42,8 +43,12 @@ function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Home />} />
-        <Route path="/:category" element={<Home />} />
-        <Route path="/:category/:subcategory" element={<Home />} />
+        <Route path={`/:category`} element={<Home />} />
+        <Route path={`/:category/:subcategory`} element={<Home />} />
+        <Route
+          path={`/:category/:subcategory/:title`}
+          element={<ProductDetail product={product} />}
+        />
 
         <Route path="/profile" element={<ProfileDetail />} />
         <Route path="/favorite" element={<Favorite />} />
