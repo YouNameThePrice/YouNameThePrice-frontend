@@ -19,6 +19,7 @@ function App() {
 
   const [favoriteProducts, setFavoriteProducts] = useState([]);
   const [cartProducts, setCartProducts] = useState([]);
+  let [quantity, setQuantity] = useState(1);
 
   const data = {
     favoriteProducts,
@@ -26,6 +27,8 @@ function App() {
     cartProducts,
     setCartProducts,
     product,
+    quantity,
+    setQuantity,
   };
 
   return (

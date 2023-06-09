@@ -4,13 +4,24 @@ import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
 import { MainContext } from "../context/context";
 
 function CartProductCard({ item }) {
-  const { cartProducts, setCartProducts } = useContext(MainContext);
+  const { cartProducts, setCartProducts, quantity, setQuantity } =
+    useContext(MainContext);
 
   const removeCartItem = () => {
     const updatedCartItems = cartProducts.filter(
       (cartItem) => cartItem.id !== item.id
     );
     setCartProducts(updatedCartItems);
+  };
+
+  const increaseQuantity = () => {
+    setQuantity((prevQuantity) => prevQuantity + 1);
+  };
+
+  const decreaseQuantity = () => {
+    if (quantity > 1) {
+      setQuantity((prevQuantity) => prevQuantity - 1);
+    }
   };
 
   return (
@@ -23,11 +34,11 @@ function CartProductCard({ item }) {
       <div className="w-2/3">
         <h2 className="pb-8 text-2xl">{item.title}</h2>
         <div className="flex flex-row items-center">
-          <button>
+          <button onClick={increaseQuantity}>
             <AiOutlinePlusCircle className="h-6 w-6" />
           </button>
-          <p className="mx-2">1</p>
-          <button>
+          <p className="mx-2">{quantity}</p>
+          <button onClick={decreaseQuantity}>
             <AiOutlineMinusCircle className="h-6 w-6" />
           </button>
         </div>
@@ -36,7 +47,7 @@ function CartProductCard({ item }) {
         <button onClick={removeCartItem}>
           <FaTrashAlt className="h-6 w-6 mb-10" />
         </button>
-        <h3 className="text-lg font-bold">{item.price} TL</h3>
+        <h3 className="text-lg font-bold">{quantity * item.price} TL</h3>
       </div>
     </div>
   );

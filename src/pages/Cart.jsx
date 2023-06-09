@@ -1,9 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import CartProductCard from "../components/CartProductCard";
 import { MainContext } from "../context/context";
 
 function Cart() {
-  const { cartProducts } = useContext(MainContext);
+  const { cartProducts, quantity } = useContext(MainContext);
+  let [totalPrice, setTotalPrice] = useState(0);
+
+  useEffect(() => {
+    const calculateTotalPrice = () => {
+      let totalPrice = 0;
+      cartProducts.forEach((item) => {
+        totalPrice += item.price * quantity;
+      });
+      setTotalPrice(totalPrice);
+    };
+
+    calculateTotalPrice();
+  }, [cartProducts, quantity]);
 
   return (
     <div className="flex justify-center  h-[83.2vh] px-7 pt-10">
@@ -26,7 +39,8 @@ function Cart() {
         <hr className="border-black w-full mb-4" />
         <div className="p-4 mb-4">
           <h3 className="text-lg font-bold">
-            Toplam Tutar : <span className="-text--turquoise">40000 TL</span>
+            Toplam Tutar :
+            <span className="-text--turquoise">{totalPrice} TL</span>
           </h3>
         </div>
         <button className="bg-black text-white py-2 px-4 rounded-xl w-1/4">
