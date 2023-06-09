@@ -41,6 +41,7 @@ function App() {
         <Route path="/register" element={<Register />} />
 
         <Route path="/" element={<Home />} />
+        <Route path="/search" element={<Home />} />
         <Route path="/:category" element={<Home />} />
         <Route path="/:category/:subcategory" element={<Home />} />
 

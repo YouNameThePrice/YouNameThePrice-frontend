@@ -11,22 +11,42 @@ function Home() {
   const showSubcategory = location.pathname !== "/";
   const { category, subcategory } = useParams();
   const { product } = useContext(MainContext);
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
     setSelectedCategory(category);
     setSelectedSubCategory(subcategory);
-  }, [category, subcategory]);
 
-  const filteredProducts = product.filter((product) => {
-    if (selectedSubCategory) {
-      return (
-        product.subCategory.toLowerCase() === selectedSubCategory.toLowerCase()
+    if (location.search) {
+      const searchQuery = decodeURIComponent(location.search.split("=")[1]);
+      const filtered = product.filter((product) =>
+        product.title.toLowerCase().includes(searchQuery.toLowerCase())
       );
-    } else if (selectedCategory) {
-      return product.category.toLowerCase() === selectedCategory.toLowerCase();
+      setFilteredProducts(filtered);
+    } else {
+      const filtered = product.filter((product) => {
+        if (selectedSubCategory) {
+          return (
+            product.subCategory.toLowerCase() ===
+            selectedSubCategory.toLowerCase()
+          );
+        } else if (selectedCategory) {
+          return (
+            product.category.toLowerCase() === selectedCategory.toLowerCase()
+          );
+        }
+        return true;
+      });
+      setFilteredProducts(filtered);
     }
-    return true;
-  });
+  }, [
+    category,
+    subcategory,
+    location.search,
+    selectedCategory,
+    selectedSubCategory,
+    product,
+  ]);
 
   return (
     <div className="flex h-[83.2vh] max-h-screen">

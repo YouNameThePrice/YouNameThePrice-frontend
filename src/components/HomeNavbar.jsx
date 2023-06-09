@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo.svg";
 import {
   AiOutlineSearch,
@@ -7,9 +7,22 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function HomeNavbar() {
+  const [searchText, setSearchText] = useState("");
+  const navigate = useNavigate();
+
+  const handleInputChange = (e) => {
+    setSearchText(e.target.value);
+  };
+
+  const handleSearch = () => {
+    const searchQuery = encodeURIComponent(searchText.trim());
+    navigate(`/search?query=${searchQuery}`);
+    setSearchText("");
+  };
+
   return (
     <nav className="bg-orange flex justify-between items-center py-2 px-4">
       <div className="flex items-center">
@@ -23,8 +36,13 @@ function HomeNavbar() {
           className="rounded-3xl py-1 px-3 w-96 pr-10"
           type="text"
           placeholder="Ürün ara"
+          value={searchText}
+          onChange={handleInputChange}
         />
-        <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
+        <div
+          className="absolute right-3 top-1/2 transform -translate-y-1/2"
+          onClick={handleSearch}
+        >
           <AiOutlineSearch size={25} />
         </div>
       </div>
