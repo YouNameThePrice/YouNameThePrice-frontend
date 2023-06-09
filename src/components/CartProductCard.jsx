@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { MainContext } from "../context/context";
 
 function CartProductCard({ item }) {
@@ -11,6 +13,16 @@ function CartProductCard({ item }) {
       (cartItem) => cartItem.id !== item.id
     );
     setCartProducts(updatedCartItems);
+
+    toast.error("Ürün sepetten kaldırıldı.", {
+      position: "top-right",
+      autoClose: 500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+    });
   };
 
   const increaseQuantity = (id) => {
@@ -32,7 +44,7 @@ function CartProductCard({ item }) {
   };
 
   return (
-    <div className="flex items-center py-4  bg-light--gray border-b-2 border-b-black">
+    <div className="flex items-center py-4 bg-light--gray border-b-2 border-b-black">
       <img
         src={item.imageUrl}
         alt={item.title}
@@ -50,12 +62,13 @@ function CartProductCard({ item }) {
           </button>
         </div>
       </div>
-      <div className="flex flex-col justify-end items-end ml-7 ">
+      <div className="flex flex-col justify-end items-end ml-7">
         <button onClick={removeCartItem}>
           <FaTrashAlt className="h-6 w-6 mb-10" />
         </button>
         <h3 className="text-lg font-bold">{item.quantity * item.price} TL</h3>
       </div>
+      <ToastContainer />
     </div>
   );
 }

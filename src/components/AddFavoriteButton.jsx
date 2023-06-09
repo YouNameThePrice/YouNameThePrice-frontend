@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { IoStarSharp } from "react-icons/io5";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { MainContext } from "../context/context";
 
 function AddFavoriteButton({ product }) {
@@ -12,18 +14,39 @@ function AddFavoriteButton({ product }) {
     );
 
     if (isFavorite) {
-      alert("Bu ürün zaten favorilere eklenmiş.");
+      toast.error("Bu ürün zaten favorilere eklenmiş.", {
+        position: "top-right",
+        autoClose: 500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+      });
       return;
     }
 
     const newFavorites = [...favoriteProducts, item];
     setFavoriteProducts(newFavorites);
+
+    toast.success("Ürün favorilere eklendi!", {
+      position: "top-right",
+      autoClose: 500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+    });
   };
 
   return (
-    <button className="ml-2" onClick={() => addFavorite(product)}>
-      <IoStarSharp className="text-orange" size={50} />
-    </button>
+    <>
+      <button className="ml-2" onClick={() => addFavorite(product)}>
+        <IoStarSharp className="text-orange" size={50} />
+      </button>
+      <ToastContainer />
+    </>
   );
 }
 
