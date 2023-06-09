@@ -1,8 +1,13 @@
 import React from "react";
 import { RiLogoutBoxLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function ProfileSidebar() {
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    navigate("/login");
+  };
+
   return (
     <div className="w-64 flex-none overflow-y-auto border-r border-r-slate-400 text-center bg-light--gray">
       <div className="text-3xl font-bold px-4 py-4">Hesabım</div>
@@ -14,7 +19,7 @@ function ProfileSidebar() {
         <Link to="/favorite">Favorilerim</Link>
       </div>
       <div className="flex justify-center items-center px-4 py-2 text-gray-700 hover:bg-gray-400 hover:text-white border-t border-black my-4 ">
-        <button className="flex items-center">
+        <button className="flex items-center" onClick={handleLogout}>
           <RiLogoutBoxLine className="mr-2" size={35} />
           Çıkış Yap
         </button>
