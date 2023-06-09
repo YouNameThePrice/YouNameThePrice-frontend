@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 import Subcategory from "../components/Subcategory";
 import { useLocation, useParams } from "react-router-dom";
-import product from "../json/data.json";
+import { MainContext } from "../context/context";
 
 function Home() {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -10,6 +10,7 @@ function Home() {
   const location = useLocation();
   const showSubcategory = location.pathname !== "/";
   const { category, subcategory } = useParams();
+  const { product } = useContext(MainContext);
 
   useEffect(() => {
     setSelectedCategory(category);

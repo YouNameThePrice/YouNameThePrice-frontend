@@ -15,7 +15,7 @@ function ProductCard({ product }) {
         </div>
         <div className="px-4 py-2 flex justify-center">
           <AddCartButton />
-          <AddFavoriteButton />
+          <AddFavoriteButton product={product} />
         </div>
       </div>
     </div>
