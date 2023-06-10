@@ -158,6 +158,255 @@
         "imageUrl": "https://s12.gifyu.com/images/SuYeg.webp",
         "category": "Moda",
         "subCategory": "Ayakkabı"  
+    },
+    {
+        "id": 16,
+        "title": "Su Damlası Kolye",
+        "detail": "Ürün tipi: Gümüş, Renk: Pembe, Ağırlık: 4gr, Ürün ölçüsü: 21 x 11 mm",
+        "price": 100,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/Su5Uj.webp",
+        "category": "Moda",
+        "subCategory": "Aksesuar"  
+    },
+    {
+        "id": 17,
+        "title": "Max Factor Maskara",
+        "detail": "Ürün Modeli: Max Factor False Lash Epic, Renk: Siyah, Zoom-Action uca sahip False Lash Epic Fırça",
+        "price": 90,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/Su5Vi.webp",
+        "category": "Kozmetik",
+        "subCategory": "MakyajÜrünleri"  
+    },
+    {
+        "id": 18,
+        "title": "La Roche-Posay Yüz Jeli",
+        "detail": "Ağırlık: 400 ml, Yağlı ve akneye eğilimci ciltler için, Ürün tipi: Yüz temizleme jeli",
+        "price": 200,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/Su5ZL.webp",
+        "category": "Kozmetik",
+        "subCategory": "CiltBakım"  
+    },
+    {
+        "id": 19,
+        "title": "Elseve Şampuan",
+        "detail": "Marka: Loreal Paris, Ağırlık: 500 ml, , Ürün tipi: Saç bakım şampuanı",
+        "price": 60,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/Su5Zo.webp",
+        "category": "Kozmetik",
+        "subCategory": "SaçBakım"  
+    },
+    {
+        "id": 20,
+        "title": "Versace Eros Parfüm",
+        "detail": "Parfüm Tipi: EDT, İçerik: Odunsu-Turunçgil, Ağırlık: 100 ml",
+        "price": 1250,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/Su5au.webp",
+        "category": "Kozmetik",
+        "subCategory": "Parfüm&Deodorant"  
+    },
+    {
+        "id": 21,
+        "title": "Mekik Çekme Aleti",
+        "detail": "Ayak destekli mekik çekme aleti, Renk: Siyah",
+        "price": 200,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/Su5a5.webp",
+        "category": "Spor",
+        "subCategory": "FitnessAletleri"  
+    },
+    {
+        "id": 22,
+        "title": "Excalibur Boks Torbası",
+        "detail": "Model: Excalibur EX00923, Renk: Siyah, Darbelere karşı dayanıklı, Zincirli askı",
+        "price": 1000,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/Su5D1.webp",
+        "category": "Spor",
+        "subCategory": "SporAksesuarları"  
+    },
+    {
+        "id": 23,
+        "title": "Hardline Whey Protein",
+        "detail": "Marka: Hardline Nutrition, Servis sayısı: 30, Ağırlık: 908 gr, Aroma: Çikolata",
+        "price": 710,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/Su5ot.webp",
+        "category": "Spor",
+        "subCategory": "BesinTakviyeleri"  
+    },
+    {
+        "id": 24,
+        "title": "Cordoba Klasik Gitar",
+        "detail": "Model: Cordoba C3M, Gövde Malzemesi: Ahşap, Renk: Kahverengi",
+        "price": 2500,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/Su518.webp",
+        "category": "MüzikAletleri",
+        "subCategory": "Gitar"  
+    },
+    {
+        "id": 25,
+        "title": "Stentor 1018 Keman",
+        "detail": "Model: Stentor 1018/A VLN O/F 4/4, Gövde Malzemesi: Lamine, Burgu: Abanoz",
+        "price": 3000,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/Su5An.webp",
+        "category": "MüzikAletleri",
+        "subCategory": "Keman"  
+    },
+    {
+        "id": 26,
+        "title": "Helvacıoğlu Blok Flüt",
+        "detail": "Model: Helvacıoğlu 1000, Renk: Bej",
+        "price": 30,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/Su5BB.webp",
+        "category": "MüzikAletleri",
+        "subCategory": "NefesliÇalgılar"  
+    },
+    {
+        "id": 27,
+        "title": "Casio Dijital Piyano",
+        "detail": "Model: Casio Cdp-s110bk, Renk: Siyah",
+        "price": 7000,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/Su5O7.webp",
+        "category": "MüzikAletleri",
+        "subCategory": "Piyano"  
+    },
+    {
+        "id": 28,
+        "title": "Osmancık Pirinç 2.5kg",
+        "detail": "Miktar: 2500 gr, Marka: Tarım Kredi",
+        "price": 99,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/Su5yf.webp",
+        "category": "Süpermarket",
+        "subCategory": "TemelGıdalar"  
+    },
+    {
+        "id": 29,
+        "title": "Kuru Mama Saklama Kutusu",
+        "detail": "Model: Buffer, Kedi ve Köpek için kullanılabilir, Ebat: 45x25",
+        "price": 60,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/Su5Gq.webp",
+        "category": "Süpermarket",
+        "subCategory": "EvcilHayvanÜrünleri"  
+    },
+    {
+        "id": 30,
+        "title": "Dex Hijyenik Sabun",
+        "detail": "Marka: Dex, Ağırlık: 100gr",
+        "price": 11,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/Su5Jg.webp",
+        "category": "Süpermarket",
+        "subCategory": "Temizlik"  
+    },
+    {
+        "id": 31,
+        "title": "Monster Energy Drink",
+        "detail": "Ağırlık: 330 ml, Karpuz Aromalı",
+        "price": 24,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/Su5PS.webp",
+        "category": "Süpermarket",
+        "subCategory": "İçecekler"  
+    },
+    {
+        "id": 32,
+        "title": "Öncü Domates Salçası",
+        "detail": "Üretici: Öncü, Doğal domateslerle elde edilmiş salça,A ğırlık: 830 gr",
+        "price": 11,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/Su5P6.webp",
+        "category": "Süpermarket",
+        "subCategory": "HazırGıdalar"  
+    },
+    {
+        "id": 33,
+        "title": "Çift Kişilik Baza",
+        "detail": "Üretici: İpek Mobilya, Boyut: 150x200, Çift Kişilik Konforlu Baza",
+        "price": 2500,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/Su5XN.webp",
+        "category": "Ev&Yaşam",
+        "subCategory": "Mobilya"  
+    },
+    {
+        "id": 34,
+        "title": "30 Ledli Günışığı",
+        "detail": "Üretici: BSSM, 30 Ledli, Güneş Enerjili Çiçekli Günışığı",
+        "price": 200,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/Su5XB.webp",
+        "category": "Ev&Yaşam",
+        "subCategory": "Dekorasyon"  
+    },
+    {
+        "id": 35,
+        "title": "Güneş Enerjili Lamba",
+        "detail": "Model: Panther PT-B011S, Solar Güneş Enerjili Bahçe Lamba Aydınlatma",
+        "price": 45,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/Su5et.webp",
+        "category": "Ev&Yaşam",
+        "subCategory": "Aydınlatma"  
+    },
+    {
+        "id": 36,
+        "title": "Kemer Delme Pensesi",
+        "detail": "Model: KMR-DLM, Her tipten kemer için kullanımı uygundur",
+        "price": 90,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/SuD2d.webp",
+        "category": "Ev&Yaşam",
+        "subCategory": "EvGereçleri"  
+    },
+    {
+        "id": 37,
+        "title": "Rotring Kurşun Kalem",
+        "detail": "Model: Rotring 500, Ürün Tipi: Mekanik, Uç: 0.7 mm, Renk: Siyah",
+        "price": 60,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/SuDSh.webp",
+        "category": "Kırtasiye",
+        "subCategory": "Kalem"  
+    },
+    {
+        "id": 38,
+        "title": "Atomik Alışkanlıklar",
+        "detail": "Yazar: James Clear, Yayınevi: Pegasus Yayınları, Tür: Kişisel Gelişim, Sayfa sayısı: 240",
+        "price": 50,
+        "quantity": 1,   
+        "imageUrl": "https://s12.gifyu.com/images/SuDb8.webp",
+        "category": "Kırtasiye",
+        "subCategory": "Kitap"  
+    },
+    {
+        "id": 39,
+        "title": "Berlin Ofis Koltuğu",
+        "detail": "Üretici: Berlin, Fileli, Rahat ve konforlu",
+        "price": 700,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/SuDb1.webp",
+        "category": "Kırtasiye",
+        "subCategory": "OfisMalzemeleri"  
+    },
+    {
+        "id": 40,
+        "title": "Faber Castell Pastel Boya",
+        "detail": "Üretici: Faber Castell, Ürün Tipi: Pastel Boya, Kalem Sayısı: 12",
+        "price": 32,
+        "quantity": 1,   
+        "imageUrl": "https://s11.gifyu.com/images/SuDzY.webp",
+        "category": "Kırtasiye",
+        "subCategory": "OkulMalzemeleri"  
     }
-
 ]
