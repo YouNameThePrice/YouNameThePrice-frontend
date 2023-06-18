@@ -3,14 +3,14 @@ import UserNavbar from "../components/UserNavbar";
 
 function Login() {
   return (
-    <div className="bg-orange min-h-screen">
+    <div className="bg-orange min-h-screen h-auto w-full">
       <UserNavbar />
 
-      <div className="flex items-center justify-center h-screen ">
-        <div className="flex flex-col items-center bg-light--gray px-20 py-12 border-2 border-black">
+      <div className="flex items-center justify-center h-screen w-full">
+        <div className="flex flex-col items-center bg-light--gray border-2 border-black sm:w-4/5 md:w-1/2 px-10 py-6 md:px-20 md:py-12 ">
           <h2 className="mb-8 font-bold text-2xl">Giriş Yap</h2>
           <form
-            className="flex flex-col items-center w-96"
+            className="flex flex-col items-center sm:w-auto md:w-96 sm:px-2 md:px-2"
             name="loginForm"
             id="loginForm"
           >

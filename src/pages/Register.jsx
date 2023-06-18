@@ -3,15 +3,18 @@ import UserNavbar from "../components/UserNavbar";
 
 function Register() {
   return (
-    <div className="bg-orange min-h-screen">
+    <div className="bg-orange min-h-screen h-auto w-full">
       <UserNavbar />
 
-      <div className="flex items-center justify-center h-screen">
-        <div className="flex flex-col items-center bg-light--gray px-20 py-12 border-2 border-black">
+      <div className="flex items-center justify-center h-screen w-full">
+        <div className="flex flex-col items-center bg-light--gray px-3 py-8 border-2 border-black w-3/5 sm:w-4/5 md:w-1/2 md:px-20 md:py-12">
           <h2 className="mb-8 font-bold text-2xl">Hesap Oluştur</h2>
-          <form className="flex flex-col items-center w-96" name="registerForm">
-            <div class="flex flex-row">
-              <div class="flex-grow mr-2">
+          <form
+            className="flex flex-col items-center w-auto md:w-96 sm:px-2 md:px-2"
+            name="registerForm"
+          >
+            <div class="flex flex-col sm:flex-row">
+              <div class="flex-grow sm:mr-2">
                 <input
                   type="text"
                   placeholder="Ad"
