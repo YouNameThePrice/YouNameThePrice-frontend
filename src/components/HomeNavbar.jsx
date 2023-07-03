@@ -24,16 +24,22 @@ function HomeNavbar() {
   };
 
   return (
-    <nav className="bg-orange flex justify-between items-center py-2 px-4">
+    <nav className="bg-orange w-screen flex justify-between items-center py-2 px-4">
       <div className="flex items-center">
-        <h1 className="text-2xl font-bold mr-4 flex-shrink-0">
+        <h1 className="md:text-2xl font-bold mr-4 flex-shrink-0">
           You Name The Price
         </h1>
-        <img src={logo} alt="brand-logo" height={45} width={45} />
+        <img
+          src={logo}
+          alt="brand-logo"
+          height={45}
+          width={45}
+          className="hidden sm:block"
+        />
       </div>
-      <div className="flex items-center relative">
+      <div className="hidden sm:flex items-center relative">
         <input
-          className="rounded-3xl py-1 px-3 w-96 pr-10"
+          className="rounded-3xl py-1 px-3 md:max-w-md lg:w-96 pr-10"
           type="text"
           placeholder="Ürün ara"
           value={searchText}
