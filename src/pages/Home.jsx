@@ -49,7 +49,7 @@ function Home() {
   ]);
 
   return (
-    <div className="flex h-[83.2vh] max-h-screen">
+    <div className="flex w-screen">
       {showSubcategory && <Subcategory />}
 
       <div className="flex flex-wrap w-full overflow-y-scroll">
