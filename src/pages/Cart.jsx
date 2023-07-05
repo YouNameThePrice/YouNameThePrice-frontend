@@ -19,9 +19,9 @@ function Cart() {
   }, [cartProducts]);
 
   return (
-    <div className="flex justify-center  h-[83.2vh] px-7 pt-10">
+    <div className="flex flex-col md:flex-row justify-center px-2 lg:px-7 pt-10 md:mb-[2rem] lg:mb-0">
       {/* Product Section */}
-      <div className="w-2/3 p-8 overflow-y-scroll">
+      <div className="w-full md:w-3/5 lg:w-2/3 lg:p-8 lg:overflow-y-scroll">
         <div className="space-y-4 ">
           {/* Product Card */}
           {cartProducts.map((item, id) => (
@@ -31,19 +31,21 @@ function Cart() {
       </div>
 
       {/* Space */}
-      <div className="w-12" />
+      <div className="hidden md:block md:w-8 lg:w-12" />
 
       {/* Order Detail Section */}
-      <div className="flex flex-col justify-center items-center w-1/3 h-2/5 bg-light--gray border border-black">
-        <h2 className="text-2xl font-bold mb-4">Sipariş Detayı</h2>
+      <div className="flex flex-col justify-center items-center space-y-3 py-2 md:py-2  my-4 sm:my-8 md:my-0 md:w-1/3 sm:h-2/5 bg-light--gray border border-black">
+        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold lg:mb-4">
+          Sipariş Detayı
+        </h2>
         <hr className="border-black w-full mb-4" />
         <div className="p-4 mb-4">
-          <h3 className="text-lg font-bold">
+          <h3 className="sm:text-lg font-bold">
             Toplam Tutar :
             <span className="-text--turquoise"> {totalPrice} TL</span>
           </h3>
         </div>
-        <button className="bg-black text-white py-2 px-4 rounded-xl w-1/4">
+        <button className="bg-black text-white py-2 px-4 rounded-xl sm:w-1/4 md:w-3/6">
           Satın Al
         </button>
       </div>

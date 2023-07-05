@@ -52,7 +52,7 @@ function HomeNavbar() {
           <AiOutlineSearch size={25} />
         </div>
       </div>
-      <div className="mr-4">
+      <div className="sm:mr-4">
         <ul className="flex">
           <li className="mr-2">
             <Link to="/">
