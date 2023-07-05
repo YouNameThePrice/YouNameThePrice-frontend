@@ -21,7 +21,7 @@ function Cart() {
   return (
     <div className="flex flex-col md:flex-row justify-center px-2 lg:px-7 pt-10 md:mb-[2rem]">
       {/* Product Section */}
-      <div className="w-full md:w-3/5 lg:w-2/3 lg:overflow-y-scroll">
+      <div className="w-full md:w-3/5 lg:w-2/3">
         <div className="space-y-4 ">
           {/* Product Card */}
           {cartProducts.map((item, id) => (

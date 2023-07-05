@@ -13,22 +13,23 @@ function ProductDetail() {
   }, [title]);
 
   return (
-    <div className="bg-white max-h-screen w-full h-[83.2vh] flex justify-center items-center">
-      <div className="border border-slate-400 rounded-2xl flex flex-row bg-light--gray max-h-screen h-3/5 w-4/6 p-10 ">
+    <div className="bg-white h-screen w-screen flex justify-center items-center ">
+      <div className="border border-slate-400 sm:rounded-2xl bg-light--gray h-5/6 md:h-3/5 md:w-4/6 md:p-10 ">
         {detailData.map((item, index) => {
           const splitDetail = item.detail?.split(",");
           return (
-            <div key={index} className="flex">
-              <div>
+            <div key={index} className="flex flex-col md:flex-row">
+              <div className="h-1/2">
                 <img
                   src={item.imageUrl}
                   alt={item.title}
                   height={250}
                   width={250}
+                  className="max-h-full w-1/2 mx-auto sm:h-[250] sm:w-[250]"
                 />
               </div>
-              <div className="w-12" />
-              <div className="flex flex-col">
+              <div className="hidden sm:block sm:w-12" />
+              <div className=" sm:flex sm:flex-col">
                 <h1 className="text-center text-3xl font-bold">{item.title}</h1>
                 <hr className="border-black w-full mb-4 mt-2" />
 
@@ -39,9 +40,11 @@ function ProductDetail() {
                 </ul>
                 <div className="flex ">
                   <div className="flex items-end">
-                    <p className="font-bold text-3xl  ">{item.price} TL</p>
+                    <p className="font-bold text-lg md:text-3xl ">
+                      {item.price} TL
+                    </p>
                   </div>
-                  <div className="w-24" />
+                  <div className="hidden sm:block w-24" />
                   <AddCartButton product={item} />
                   <AddFavoriteButton product={item} />
                 </div>
