@@ -13,22 +13,22 @@ function ProductDetail() {
   }, [title]);
 
   return (
-    <div className="bg-white h-screen w-screen flex justify-center items-center min-h-fit py-2">
-      <div className="border border-slate-400 sm:rounded-2xl bg-light--gray px-2 py-4 my-auto md:h-3/5 md:w-4/6 md:p-10 ">
+    <div className="bg-white h-screen w-screen flex justify-center items-center min-h-fit py-2 md:px-4">
+      <div className="border border-slate-400 sm:rounded-2xl bg-light--gray px-2 py-4 my-auto">
         {detailData.map((item, index) => {
           const splitDetail = item.detail?.split(",");
           return (
-            <div key={index} className="flex flex-col md:flex-row max-h-fit">
-              <div className="h-1/2">
+            <div key={index} className="flex flex-col md:flex-row">
+              <div className="h-1/2 md:h-full">
                 <img
                   src={item.imageUrl}
                   alt={item.title}
                   height={250}
                   width={250}
-                  className="md:max-h-full w-1/2 mx-auto sm:h-[250] sm:w-[250]"
+                  className="w-1/2 mx-auto sm:h-[250] sm:w-[250] md:w-full md:h-56"
                 />
               </div>
-              <div className="hidden sm:block sm:w-12" />
+              <div className="hidden sm:block sm:w-12 md:w-8" />
               <div className=" sm:flex sm:flex-col">
                 <h1 className="text-center text-xl sm:text-2xl font-bold">
                   {item.title}
@@ -46,7 +46,7 @@ function ProductDetail() {
                       {item.price} TL
                     </p>
                   </div>
-                  {/* <div className="hidden md:block w-24" /> */}
+                  <div className="hidden md:block w-24" />
                   <AddCartButton product={item} />
                   <AddFavoriteButton product={item} />
                 </div>
