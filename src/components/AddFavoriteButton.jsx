@@ -42,7 +42,7 @@ function AddFavoriteButton({ product }) {
 
   return (
     <>
-      <button className="ml-2" onClick={() => addFavorite(product)}>
+      <button className="md:ml-2" onClick={() => addFavorite(product)}>
         <IoStarSharp className="text-orange" size={50} />
       </button>
       <ToastContainer />
