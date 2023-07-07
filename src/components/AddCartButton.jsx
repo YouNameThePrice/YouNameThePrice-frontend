@@ -39,7 +39,7 @@ function AddCartButton({ product }) {
   return (
     <>
       <button
-        className="bg-light--gray sm:py-2 px-1 sm:px-4 rounded-full border-2 border-black w-32 h-14 sm:w-48"
+        className="bg-light--gray py-1 px-1 sm:px-4 rounded-full border-2 border-black sm:w-48"
         onClick={() => addCart(product)}
       >
         Sepete Ekle

@@ -26,7 +26,7 @@ function RemoveFavoriteButton({ item }) {
   return (
     <div>
       <button
-        className="bg-orange py-2 rounded-full border-2 border-black w-48"
+        className="bg-orange py-1 px-1 rounded-full border-2 border-black w-fit"
         onClick={removeFavorite}
       >
         Favorilerden Çıkar
