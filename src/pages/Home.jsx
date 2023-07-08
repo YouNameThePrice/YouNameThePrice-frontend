@@ -52,7 +52,7 @@ function Home() {
     <div className="flex w-screen h-screen">
       {showSubcategory && <Subcategory />}
 
-      <div className="flex flex-wrap w-full overflow-y-scroll">
+      <div className="flex flex-wrap w-full justify-center lg:justify-start overflow-y-scroll">
         {filteredProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

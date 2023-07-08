@@ -22,7 +22,7 @@ function ProductCard({ product }) {
           </h3>
           <p className="font-bold text-xl">{product.price} TL</p>
         </div>
-        <div className="px-4 py-2 flex justify-center">
+        <div className="px-4 py-2 space-x-1 sm:space-x-0 flex justify-center">
           <AddCartButton product={product} />
           <AddFavoriteButton product={product} />
         </div>
