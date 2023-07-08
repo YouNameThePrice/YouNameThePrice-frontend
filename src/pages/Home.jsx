@@ -51,10 +51,12 @@ function Home() {
 
   return (
     <div className="flex w-screen h-screen">
-      {showSubcategory && (
+      {showSubcategory && window.innerWidth < 640 ? (
         <HamburgerMenu>
           <Subcategory />
         </HamburgerMenu>
+      ) : (
+        <Subcategory />
       )}
 
       <div className="flex flex-wrap w-full justify-center lg:justify-start overflow-y-scroll pb-10">
