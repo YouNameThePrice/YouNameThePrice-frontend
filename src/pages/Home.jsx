@@ -13,6 +13,7 @@ function Home() {
   const { category, subcategory } = useParams();
   const { product } = useContext(MainContext);
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const { screenWidth } = useContext(MainContext);
 
   useEffect(() => {
     setSelectedCategory(category);
@@ -51,7 +52,7 @@ function Home() {
 
   return (
     <div className="flex w-screen h-screen">
-      {showSubcategory && window.innerWidth < 640 ? (
+      {showSubcategory && screenWidth < 640 ? (
         <HamburgerMenu>
           <Subcategory />
         </HamburgerMenu>

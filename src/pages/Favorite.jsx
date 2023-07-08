@@ -6,10 +6,11 @@ import HamburgerMenu from "../components/HamburgerMenu";
 
 function Favorite() {
   const { favoriteProducts } = useContext(MainContext);
+  const { screenWidth } = useContext(MainContext);
 
   return (
     <div className="flex flex-row max-h-screen w-screen">
-      {window.innerWidth < 640 ? (
+      {screenWidth < 640 ? (
         <HamburgerMenu>
           <ProfileSidebar />
         </HamburgerMenu>

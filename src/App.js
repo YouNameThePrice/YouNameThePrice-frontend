@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import "./index.css";
@@ -20,6 +20,18 @@ function App() {
 
   const [favoriteProducts, setFavoriteProducts] = useState([]);
   const [cartProducts, setCartProducts] = useState([]);
+  const [screenWidth, setScreenWidth] = useState(getCurrentWidth());
+
+  function getCurrentWidth() {
+    return window.innerWidth;
+  }
+
+  useEffect(() => {
+    const updateScreenWidth = () => setScreenWidth(getCurrentWidth());
+    window.addEventListener("resize", updateScreenWidth);
+
+    return () => window.addEventListener("resize", updateScreenWidth);
+  }, [screenWidth]);
 
   const data = {
     favoriteProducts,
@@ -27,6 +39,7 @@ function App() {
     cartProducts,
     setCartProducts,
     product,
+    screenWidth,
   };
 
   return (
