@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import { useParams, Link } from "react-router-dom";
 import categories from "../json/category.json";
 
@@ -13,8 +13,8 @@ function Subcategory() {
   }
 
   return (
-    <div className="hidden sm:block bg-light--gray border border-r-slate-400 w-[200px] px-2">
-      <ul className="flex flex-col items-center justify-center space-y-4 lg:space-y-8 mt-12">
+    <div className="bg-light--gray border border-r-slate-400 w-[200px] px-2">
+      <ul className="flex flex-col items-center justify-center space-y-4 lg:space-y-8 my-2 sm:mt-12">
         {categoryData.subCategory.map((subCategory) => (
           <li
             key={subCategory.name}

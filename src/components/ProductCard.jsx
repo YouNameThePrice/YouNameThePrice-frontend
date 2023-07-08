@@ -17,9 +17,7 @@ function ProductCard({ product }) {
           />
         </Link>
         <div className="px-3 py-2 border-y border-y-slate-700 flex flex-col items-center">
-          <h3 className="text-lg mb-2 overflow-clip text-left">
-            {product.title}
-          </h3>
+          <h3 className="text-lg mb-2 text-left">{product.title}</h3>
           <p className="font-bold text-xl">{product.price} TL</p>
         </div>
         <div className="px-4 py-2 space-x-1 sm:space-x-0 flex justify-center">

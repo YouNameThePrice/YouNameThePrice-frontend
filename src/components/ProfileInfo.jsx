@@ -23,7 +23,7 @@ function ProfileInfo() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center flex-grow">
+    <div className="flex justify-center items-center flex-grow h-screen">
       {!data ? (
         <div>Loading...</div>
       ) : (

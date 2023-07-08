@@ -3,6 +3,7 @@ import ProductCard from "../components/ProductCard";
 import Subcategory from "../components/Subcategory";
 import { useLocation, useParams } from "react-router-dom";
 import { MainContext } from "../context/context";
+import HamburgerMenu from "../components/HamburgerMenu";
 
 function Home() {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -50,9 +51,13 @@ function Home() {
 
   return (
     <div className="flex w-screen h-screen">
-      {showSubcategory && <Subcategory />}
+      {showSubcategory && (
+        <HamburgerMenu>
+          <Subcategory />
+        </HamburgerMenu>
+      )}
 
-      <div className="flex flex-wrap w-full justify-center lg:justify-start overflow-y-scroll">
+      <div className="flex flex-wrap w-full justify-center lg:justify-start overflow-y-scroll pb-10">
         {filteredProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
