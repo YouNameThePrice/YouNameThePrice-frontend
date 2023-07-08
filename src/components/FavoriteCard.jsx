@@ -8,14 +8,16 @@ function FavoriteCard({ item }) {
       <img
         src={item.imageUrl}
         alt={item.title}
-        className="w-1/4 h-24 mr-4 pl-1 aspect-auto"
+        className="w-1/4 h-3/4 mr-4 pl-1 lg:w-auto lg:h-5/6"
       />
-      <div className="flex flex-col">
-        <div className="flex flex-col items-center">
-          <h2 className="text-xl sm:pb-8 sm:text-2xl">{item?.title}</h2>
+      <div className="flex flex-col ml-11">
+        <div className="flex flex-col items-center lg:items-start space-y-2">
+          <h2 className="text-xl sm:pb-0 sm:text-2xl lg:text-3xl">
+            {item?.title}
+          </h2>
           <h3 className="sm:text-lg font-bold">{item.price} TL</h3>
         </div>
-        <div className="flex items-center sm:ml-7 sm:pt-14 ">
+        <div className="flex items-center sm:ml-0 sm:pt-6 ">
           <AddCartButton product={item} />
           <div className="mx-1 sm:mx-2"></div>
           <RemoveFavoriteButton item={item} />

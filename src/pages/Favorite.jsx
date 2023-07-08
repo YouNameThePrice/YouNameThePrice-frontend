@@ -11,7 +11,7 @@ function Favorite() {
       <ProfileSidebar />
 
       {/* Favorite products container */}
-      <div className="flex flex-col space-y-4 p-2 sm:p-8 overflow-y-scroll w-full">
+      <div className="flex flex-col space-y-4 p-2 sm:p-4 overflow-y-scroll w-full">
         {/* FavoriteCard */}
         {favoriteProducts.map((item, id) => (
           <FavoriteCard key={id} item={item} />

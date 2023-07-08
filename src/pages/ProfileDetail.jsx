@@ -6,7 +6,7 @@ import ProfileInfo from "../components/ProfileInfo";
 
 function ProfileDetail() {
   return (
-    <div className="flex flex-row bg-light--gray h-[83.2vh] max-h-screen">
+    <div className="flex flex-row bg-light--gray max-h-screen">
       <ProfileSidebar />
 
       {/* Üyelik Bilgilerim */}
