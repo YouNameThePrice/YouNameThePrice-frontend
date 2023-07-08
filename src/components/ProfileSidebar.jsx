@@ -9,7 +9,7 @@ function ProfileSidebar() {
   };
 
   return (
-    <div className="hidden sm:block sm:w-36 md:w-64 h-screen flex-none overflow-y-auto border-r border-r-slate-400 text-center bg-light--gray">
+    <div className="sm:w-36 md:w-64 h-screen flex-none overflow-y-auto border-r border-r-slate-400 text-center bg-light--gray">
       <div className="md:text-3xl font-bold px-4 py-4">Hesabım</div>
       <div className="border-b border-black my-4" />
       <div className="px-2 md:px-4 py-2 text-gray-700 hover:bg-orange hover:text-white">
