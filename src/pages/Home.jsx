@@ -60,7 +60,7 @@ function Home() {
         <Subcategory />
       )}
 
-      <div className="flex flex-wrap w-full justify-center lg:justify-start overflow-y-scroll pb-10">
+      <div className="flex flex-wrap w-full justify-center lg:justify-start 2xl:place-content-start overflow-y-scroll pb-10">
         {filteredProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
