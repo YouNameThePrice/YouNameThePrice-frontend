@@ -4,11 +4,11 @@ import RemoveFavoriteButton from "./RemoveFavoriteButton";
 
 function FavoriteCard({ item }) {
   return (
-    <div className="flex justify-center sm:justify-normal sm:items-center sm:p-4  bg-light--gray border-b-2 border-b-black h-1/3">
+    <div className="flex justify-center sm:justify-normal sm:items-center sm:p-4  bg-light--gray border-b-2 border-b-black h-fit">
       <img
         src={item.imageUrl}
         alt={item.title}
-        className="w-1/4 h-3/4 mr-4 pl-1 lg:w-auto lg:h-5/6"
+        className="w-1/4 h-3/4 mr-4 pl-1 lg:w-2/5 lg:h-5/6"
       />
       <div className="flex flex-col ml-11">
         <div className="flex flex-col items-center lg:items-start space-y-2">
